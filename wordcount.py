@@ -4,5 +4,4 @@ def do_word_counts(lines):
                   .reduceByKey(lambda x, y: x+y)
              ) 
     results = {word: count for word, count in counts.collect()}
-	#results = dict(counts.collect())
     return results
