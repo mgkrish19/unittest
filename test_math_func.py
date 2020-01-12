@@ -7,4 +7,4 @@ def test_add():
 
 def test_product():
   assert math_func.product(5, 3) == 15
-  assert math_func.product(5, 4) == 15  
+  assert math_func.product(5, 3  ) == 15  
