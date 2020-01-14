@@ -1,5 +1,6 @@
 import pytest
 from pyspark.sql import SparkSession
+from pyspark import SparkConf,SparkContext,HiveContext
 
 @pytest.fixture(scope="session")
 def spark_session(request):
@@ -13,3 +14,10 @@ def spark_session(request):
              .getOrCreate())
     request.addfinalizer(lambda: spark.stop())
     return spark
+
+@pytest.fixture(scope="session")
+def spark_context(request):
+    conf = (SparkConf().setMaster("local[2]").setAppName("pytest-pyspark-local-testing"))
+    sc = SparkContext(conf=conf)
+    request.addfinalizer(lambda: sc.stop())
+    return sc
