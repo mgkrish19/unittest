@@ -7,4 +7,3 @@ def filter_spark_data_frame(
     value=20,
 ):
     return dataframe.where(col(column_name) > value)
-print('23')
