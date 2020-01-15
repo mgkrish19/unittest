@@ -1,3 +1,4 @@
+pip install pytest
 import pytest
 from pyspark.sql import SparkSession
 from pyspark import SparkConf,SparkContext,HiveContext
