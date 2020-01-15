@@ -1,4 +1,6 @@
-pip install pytest
+pip install findspark
+import findspark
+findspark.init()
 import pytest
 from pyspark.sql import SparkSession
 from pyspark import SparkConf,SparkContext,HiveContext
