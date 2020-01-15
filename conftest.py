@@ -1,4 +1,4 @@
-pip install findspark
+Run pip install findspark
 import findspark
 findspark.init()
 import pytest
