@@ -1,8 +1,8 @@
-import pytest
-import findspark
-findspark.init()
-import pyspark
-sc = pyspark.SparkContext(appName="myAppName")
+#import pytest
+#import findspark
+#findspark.init()
+#import pyspark
+#sc = pyspark.SparkContext(appName="myAppName")
 
 from pyspark.sql import SparkSession
 from pyspark import SparkConf,SparkContext,HiveContext
