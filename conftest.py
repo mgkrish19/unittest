@@ -4,7 +4,7 @@ import pytest
 #import pyspark
 #sc = pyspark.SparkContext(appName="myAppName")
 
-from pyspark import SparkSession
+from pyspark.sql import SparkSession
 from pyspark import SparkConf,SparkContext,HiveContext
 
 @pytest.fixture(scope="session")
