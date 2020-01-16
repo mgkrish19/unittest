@@ -1,7 +1,7 @@
 import pytest
 #import findspark
 #findspark.init()
-#import pyspark
+import pyspark
 #sc = pyspark.SparkContext(appName="myAppName")
 
 from pyspark.sql import SparkSession
