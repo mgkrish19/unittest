@@ -1,6 +1,6 @@
 import pytest
 import findspark
-findspark.init()
+#findspark.init()
 import pyspark
 sc = pyspark.SparkContext(appName="myAppName")
 
